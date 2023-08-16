@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Interactive pricing component</title>
+  <title>Interactive pricing component</title>
 
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  
-
   <div class="container">
     <div class="header">
       <h1>Simple, traffic-based pricing</h1>
@@ -24,7 +21,7 @@
       <div class="intro-price">
         <div class="intro">
           <span class="pageviews">100k pageviews</span>
-          <p class="price">$16.00 <span>/ month</span></p>
+          <label for="rangeSlider" class="price">$16.00 <span>/ month</span></label>
         </div>
         <div class="range">
           <input type="range" name="priceSlider" class="slider" id="rangeSlider" 
@@ -41,9 +38,9 @@
       </div>
       <div class="card-footer">
         <ul class="benefits">
-          <li><img src="./images/icon-check.svg" alt="icon-check"> Unlimited websites</li>
-          <li><img src="./images/icon-check.svg" alt="icon-check"> 100% data ownership</li>
-          <li><img src="./images/icon-check.svg" alt="icon-check"> Email reports</li>
+          <li role="listitem"><img src="./images/icon-check.svg" alt="icon-check"> Unlimited websites</li>
+          <li role="listitem"><img src="./images/icon-check.svg" alt="icon-check"> 100% data ownership</li>
+          <li role="listitem"><img src="./images/icon-check.svg" alt="icon-check"> Email reports</li>
         </ul>
         <button class="start-trial">Start my trial</button>
       </div>

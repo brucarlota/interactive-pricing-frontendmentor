@@ -5,16 +5,14 @@
 
 body {
   font-family: 'Manrope', sans-serif;
-  /* height: 100vh; */
   background: url('../images/bg-pattern.svg') no-repeat;
+  background-size: 100% 65%;
 }
-
-
 
 .container {
   display: flex;
   flex-direction: column;
-  color: hsl(225, 20%, 60%);
+  color: #848EAD;
   /* height: 100%; */
   margin-top: 90px;
 
@@ -35,10 +33,9 @@ body {
   padding: 40px 0;
 }
 .header h3 {
-  color: hsl(225, 20%, 60%);
+  color: #848EAD;
   font-weight: 600;
 }
-
 
 .card {
   background: white;
@@ -49,8 +46,8 @@ body {
 
   box-shadow: 0 8px 16px 0 hsl(223, 50%, 95%);
   border-radius: 5px;
-
 }
+
 .intro {
   display: flex;
   flex-wrap: wrap;
@@ -68,7 +65,7 @@ body {
   display: flex;
 }
 .price span {
-  color: hsl(225, 20%, 60%);
+  color: #848EAD;
   font-size: 14px;
   font-weight: normal;
   margin-top: 10px;
@@ -76,22 +73,25 @@ body {
 
 .range input {
   width: 100%;
-  padding: 20px 0;
+  margin: 20px 0;
+  height: 10px;
+  background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #ECF0FB 50%, #ECF0FB 100%);
 }
 
 .discount p {
   text-align: right;
   padding: 30px 0 0 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
 }
 
 .discount p span.tag{
-  color: hsl(15, 100%, 70%);
-  background: hsl(15, 100%, 90%);
-  padding: 2px 5px;
+  color: #FF8D68;
+  background: #FEEDE8;
+  padding: 2px 7px;
   border-radius: 30px;
   white-space: nowrap;
+  font-weight: 800;
 }
 
 .card-footer {
@@ -109,13 +109,14 @@ body {
 }
 
 button.start-trial {
-  background: hsl(227, 35%, 25%);
-  color: hsl(225, 20%, 80%);
+  background: #293356;
+  color: #BECDFF;
+  font-size: 14px;
   padding: 0px 40px;
   margin: 10px;
   border-radius: 35px;
   border: none;
-  font-weight: 600;
+  font-weight: bold;
   cursor: pointer;
   height: 40px;
 }
@@ -127,7 +128,7 @@ button.start-trial {
   bottom: 0;
   width: 100%;
   padding: 20px 0; 
-  color: hsl(225, 20%, 60%);
+  color: #848EAD;
 }
 .attribution a { 
   color: hsl(225, 20%, 30%); 
@@ -145,7 +146,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 input[type='range']::-webkit-slider-runnable-track {
   height: 10px;
-  background: hsl(223, 50%, 95%);
+  /* background: hsl(223, 50%, 95%); */
   background-repeat: no-repeat;
   border-radius: 5px;
 }
@@ -188,7 +189,7 @@ input[type='range']::-webkit-slider-thumb {
 
 .toggle:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 14px;
   width: 14px;
   left: 2px;
