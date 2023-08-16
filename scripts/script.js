@@ -5,7 +5,7 @@ let rangeInput = document.getElementById('rangeSlider');
 let priceOutput = document.querySelector('.price');
 const viewsOutput = document.querySelector('.pageviews');
 
-rangeInput.addEventListener('input', function() {
+rangeInput.addEventListener('input', () => {
   const value = this.value * 25;
   priceOutput.innerHTML = `$${values[rangeInput.value]}.00 <span>/ month</span>`;
   viewsOutput.innerHTML = `${views[rangeInput.value]} pageviews`;
