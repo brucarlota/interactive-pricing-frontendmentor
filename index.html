@@ -1,58 +1,89 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Interactive pricing component</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="styles/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h1>Simple, traffic-based pricing</h1>
-      <h3>Sign-up for our 30-day trial. No credit card required. </h3>
-    </div>
+    <title>Interactive pricing component</title>
 
-    <div class="card" role="main">
-      <div class="intro-price">
-        <div class="intro">
-          <span class="pageviews">100k pageviews</span>
-          <label for="rangeSlider" class="price">$16.00 <span>/ month</span></label>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Simple, traffic-based pricing</h1>
+        <h3>Sign-up for our 30-day trial. No credit card required.</h3>
+      </div>
+
+      <div class="card" role="main">
+        <div class="intro-price">
+          <div class="intro">
+            <span class="pageviews">100k pageviews</span>
+            <p for="rangeSlider" class="price">$16.00 <span>/ month</span></p>
+          </div>
+          <div class="range">
+            <input
+              type="range"
+              name="priceSlider"
+              class="slider"
+              id="rangeSlider"
+              min="0"
+              max="4"
+              step="1"
+            />
+          </div>
+          <div class="discount">
+            <div>
+              Monthly Billing
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  name="Monthly Billing switch"
+                  id="switchBilling"
+                />
+                <span class="toggle round"></span>
+              </label>
+            </div>
+            <div>Yearly Billing <span class="tag">25% discount</span></div>
+          </div>
         </div>
-        <div class="range">
-          <input type="range" name="priceSlider" class="slider" id="rangeSlider" 
-                min="0" max="4" step="1">
-        </div>
-        <div class="discount">
-          <p>Monthly Billing
-          <label class="switch">
-            <input type="checkbox" name="Monthly Billing switch" id="switchBilling">
-            <span class="toggle round"></span>
-          </label>
-          Yearly Billing <span class="tag">25% discount</span></p>
+        <div class="card-footer">
+          <ul class="benefits">
+            <li role="listitem">
+              <img src="./images/icon-check.svg" alt="icon-check" /> Unlimited
+              websites
+            </li>
+            <li role="listitem">
+              <img src="./images/icon-check.svg" alt="icon-check" /> 100% data
+              ownership
+            </li>
+            <li role="listitem">
+              <img src="./images/icon-check.svg" alt="icon-check" /> Email
+              reports
+            </li>
+          </ul>
+          <button class="start-trial">Start my trial</button>
         </div>
       </div>
-      <div class="card-footer">
-        <ul class="benefits">
-          <li role="listitem"><img src="./images/icon-check.svg" alt="icon-check"> Unlimited websites</li>
-          <li role="listitem"><img src="./images/icon-check.svg" alt="icon-check"> 100% data ownership</li>
-          <li role="listitem"><img src="./images/icon-check.svg" alt="icon-check"> Email reports</li>
-        </ul>
-        <button class="start-trial">Start my trial</button>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" class="text-link" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/brunacarlota/" class="text-link" target="_blank">Bruna Carlota</a>.
       </div>
     </div>
-
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.linkedin.com/in/brunacarlota/">Bruna Carlota</a>.
-  </div>
-</body>
-<script src="scripts/script.js"></script>
-
+  </body>
+  <script src="scripts/script.js"></script>
 </html>

@@ -7,13 +7,17 @@ body {
   font-family: 'Manrope', sans-serif;
   background: url('../images/bg-pattern.svg') no-repeat;
   background-size: 100% 65%;
+  color: #848EAD;
+}
+
+.text-link {
+  padding-left: 3px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   color: #848EAD;
-  /* height: 100%; */
   margin-top: 90px;
 
   align-items: center;
@@ -21,12 +25,10 @@ body {
 }
 
 .header {
-  color: hsl(227, 35%, 25%);
+  color: #293356;
   text-align: center;
   font-size: 15px;
   margin-bottom: 80px;
-  /* display: block; */
-
   background-image: url('../images/pattern-circles.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -75,17 +77,25 @@ body {
   width: 100%;
   margin: 20px 0;
   height: 10px;
+  border-radius: 16px;
   background: linear-gradient(to right, #82CFD0 0%, #82CFD0 50%, #ECF0FB 50%, #ECF0FB 100%);
 }
 
-.discount p {
-  text-align: right;
-  padding: 30px 0 0 0;
-  font-size: 12px;
-  line-height: 1.7;
+.discount {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: flex-end;
 }
 
-.discount p span.tag{
+.discount div {
+  text-align: right;
+  padding: 30px 0 0 0;
+  line-height: 1.7;
+  font-size: 12px;
+}
+
+.discount div span.tag{
   color: #FF8D68;
   background: #FEEDE8;
   padding: 2px 7px;
@@ -129,6 +139,9 @@ button.start-trial {
   width: 100%;
   padding: 20px 0; 
   color: #848EAD;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 .attribution a { 
   color: hsl(225, 20%, 30%); 
