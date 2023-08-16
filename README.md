@@ -31,12 +31,4 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor solution URL](https://www.frontendmentor.io/solutions/responsive-landingpage-using-flexbox-s0RL_Kn3t)
-- Live Site URL: [Interactive pricing langingpage](https://interactive-pricing-landingpage.netlify.app/)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+- Live Site URL: [Interactive pricing langingpage](https://interactive-pricing-eight.vercel.app/)
